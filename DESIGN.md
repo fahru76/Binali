@@ -6,29 +6,30 @@
 - Local `omh design data` query was attempted but unavailable in this environment; tokens below are explicit product decisions, not framework defaults.
 
 ## Atmosphere & Identity
-- Primary taste direction: **Bold / expressive**.
-- Adjectives: high-visibility, authoritative, site-active.
-- Signature element: yellow/black hazard-stripe hero rule plus `// BINALI / SITE LOG` annotations.
+- Primary taste direction: **Minimalist / editorial**, adapted for a modern residential contractor.
+- Adjectives: clear, trustworthy, human.
+- Signature element: an obvious service-path selector that lets a visitor choose build, renovation, materials, or labour without deciphering marketing copy.
+- Rejected prior direction: high-visibility construction signage. It was visually loud but reduced readability and made the page feel like a campaign poster instead of a helpful contractor guide.
 - Audience: Terengganu homeowners and landowners evaluating a house build, renovation, materials, or construction labour.
 - Goal: establish credibility quickly, show real work, and drive a qualified WhatsApp enquiry.
 - Anti-slop decisions: no gradients as decoration, no rounded card system, no generic icon-card grid, no glass surfaces, no serif/editorial default, no placeholder copy.
 
 ## Color
-- `--charcoal: #0B0D0E` — dark surface and primary text on light ground.
-- `--ivory: #E8E6DF` — light reading surface.
-- `--accent: #FFD400` — primary action and high-visibility signal; reserved for CTAs, active states, and hazard stripe.
-- `--line: #34383A` — borders and structural rules.
-- `#F5F5F0` — text on dark surface.
-- `#BEC3C1` / `#8F9796` — secondary dark-surface text.
-- Proportion: approximately 60% light reading ground / 30% charcoal / 10% yellow signal, varying by section rhythm.
+- `--charcoal: #17233D` — deep navy surface and primary text on light ground.
+- `--ivory: #F8FAFC` — cool white reading surface.
+- `--accent: #2F6FED` — primary action and focus signal.
+- `--line: #D9E2EF` — soft blue-grey borders and structural rules.
+- `#F5F7FB` — text on dark surface.
+- `#BEC9D8` / `#8D9BB0` — secondary dark-surface text.
+- Proportion: approximately 70% cool-white reading ground / 25% navy / 5% blue signal, varying by section rhythm.
 - Contrast floor: WCAG AA minimum; never use yellow as small body text on light ground.
 
 ## Typography
-- Display: `Barlow Condensed`, fallback `Arial Narrow`, Arial, sans-serif; 700/800 uppercase with tight tracking.
-- Utility/data: `DM Mono`, monospace; uppercase, 10px, tracked.
-- Body: display stack at normal weight where the existing utility classes set body copy; minimum 14px for supporting copy.
-- Display scale: 3.4rem mobile hero, 5rem section headings, up to 92px desktop hero.
-- Body line-height: 1.5–1.75. Display line-height: approximately .94–1.0.
+- Display/body: `DM Sans`, fallback Arial, sans-serif; 400/500/600/700 with sentence case.
+- Utility/data: `DM Mono`, monospace; uppercase, 11px, tracked.
+- Body minimum: 16px with 1.6 line-height for comfortable reading.
+- Display scale: 3rem mobile hero, 2.25–4rem section headings, up to 6rem desktop hero.
+- Display line-height: 1.02–1.08; avoid condensed text for paragraphs and controls.
 - No CJK-specific surface requirement; if added, keep fallback coverage and minimum 14px body size.
 
 ## Spacing & Layout
@@ -61,7 +62,7 @@
 ## Depth & Surface
 - No blur/glass system.
 - Primary depth is hard 4px/7px CTA shadow; photo borders and structural rules provide separation.
-- No rounded card system; controls remain square to match signage language.
+- Cards and controls use 8–12px radius to signal approachability without becoming soft or toy-like.
 
 ## Accessibility Constraints & Accepted Debt
 - Preserve semantic headings, native links/buttons, labels, form controls, alt text, dialog attributes, Escape close, and keyboard gallery navigation.
