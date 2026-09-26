@@ -48,13 +48,19 @@ header{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid 
 /* ---------- hero ---------- */
 .hero{position:relative;background:var(--navy);color:#fff;overflow:hidden}
 .hero-media{position:absolute;inset:0}
-.hero-media img{width:100%;height:100%;object-fit:cover}
+.hero-media img{width:100%;height:100%;object-fit:cover;animation:kenburns 22s ease-in-out infinite alternate}
+@keyframes kenburns{
+  0%{transform:scale(1) translate(0,0)}
+  100%{transform:scale(1.08) translate(-2%,-1.5%)}
+}
 .hero-media:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,22,38,.92) 8%,rgba(10,22,38,.62) 46%,rgba(10,22,38,.12) 100%)}
 .hero-in{position:relative;z-index:2;padding:118px 0 110px;max-width:640px}
-.hero h1{font-size:clamp(38px,5.4vw,60px);line-height:1.1;color:#fff}
-.hero h1 em{font-style:normal;color:var(--gold)}
-.hero .sub{margin:20px 0 32px;font-size:19px;line-height:1.6;color:rgba(255,255,255,.9);max-width:520px}
-.hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero h1{font-size:clamp(38px,5.4vw,60px);line-height:1.1;color:#fff;opacity:0;transform:translateY(28px);animation:fadeUp .85s cubic-bezier(.22,1,.36,1) .25s forwards}
+.hero .sub{opacity:0;transform:translateY(22px);animation:fadeUp .85s cubic-bezier(.22,1,.36,1) .45s forwards}
+.hero .cta{opacity:0;transform:translateY(18px);animation:fadeUp .85s cubic-bezier(.22,1,.36,1) .62s forwards}
+.hero-badge{opacity:0;transform:translateY(12px);animation:fadeUp .75s ease-out .05s forwards}
+.hero-stats{opacity:0;transform:translateY(16px);animation:fadeUp .85s ease-out .78s forwards}
+@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(6px);border-radius:999px;padding:8px 16px;font-size:12.5px;font-weight:700;color:#fff;margin-bottom:22px}
 .hero-stats{position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.18)}
 .hero-stats div{background:rgba(10,22,38,.62);backdrop-filter:blur(8px);padding:22px 10px;text-align:center;color:#fff}
@@ -189,6 +195,15 @@ footer a:hover{color:var(--gold)}
   .mobile .primary{background:var(--wa);color:#06321a}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.tile img,.gallery img{transition:none}}
+
+/* scroll-reveal utility — add data-reveal to elements */
+[data-reveal]{opacity:0;transform:translateY(32px);transition:opacity .7s ease,transform .7s cubic-bezier(.22,1,.36,1)}
+[data-reveal].visible{opacity:1;transform:translateY(0)}
+/* cascade stagger for tiles */
+.tile[data-reveal]{transition-delay:0s}
+.tile[data-reveal]:nth-child(2){transition-delay:.1s}
+.tile[data-reveal]:nth-child(3){transition-delay:.2s}
+.tile[data-reveal]:nth-child(4){transition-delay:.3s}
 </style>
 </head>
 <body>
@@ -235,12 +250,12 @@ footer a:hover{color:var(--gold)}
 <!-- Services (perkhidmatan from the Word document) -->
 <section class="soft" id="perkhidmatan">
   <div class="container">
-    <div class="head"><span class="eyebrow">Perkhidmatan Kami</span>
+    <div class="head" data-reveal><span class="eyebrow">Perkhidmatan Kami</span>
       <h2>Satu kontraktor, semua urusan rumah anda.</h2>
       <p>Bukan sekadar membina — kami bantu dari pelan, kelulusan, sehingga pembiayaan.</p>
     </div>
     <div class="tiles">
-      <a class="tile" href="#hubungi"><img src="assets/IMG-20260918-WA0012.jpg" alt="Banglo setingkat atas tanah sendiri"><div class="tile-b"><h3>Bina Rumah Atas Tanah Sendiri</h3><p>Banglo dan semi-D, diurus penuh dari tapak ke serah kunci.</p><span>Tanya harga ↗</span></div></a>
+      <a class="tile" data-reveal href="#hubungi"><img src="assets/IMG-20260918-WA0012.jpg" alt="Banglo setingkat atas tanah sendiri"><div class="tile-b"><h3>Bina Rumah Atas Tanah Sendiri</h3><p>Banglo dan semi-D, diurus penuh dari tapak ke serah kunci.</p><span>Tanya harga ↗</span></div></a>
       <a class="tile" href="#hubungi"><img src="assets/IMG-20260919-WA0001.jpg" alt="Reka bentuk ruang dalaman rumah"><div class="tile-b"><h3>Penyediaan &amp; Lukisan Pelan</h3><p>Pelan rumah disediakan ikut citarasa, keperluan dan bajet anda.</p><span>Bincang pelan ↗</span></div></a>
       <a class="tile" href="#hubungi"><img src="assets/IMG-20260917-WA0021.jpg" alt="Fasad rumah siap"><div class="tile-b"><h3>Pengurusan Kelulusan PBT</h3><p>Urusan kelulusan Pihak Berkuasa Tempatan diselaraskan bersama anda.</p><span>Semak lokasi ↗</span></div></a>
       <a class="tile" href="#hubungi"><img src="assets/IMG-20260919-WA0006.jpg" alt="Rumah dengan pencahayaan malam"><div class="tile-b"><h3>Bantuan Pembiayaan</h3><p>Tunai, LPPSA atau institusi kewangan — kami bantu permulaan urusannya.</p><span>Tanya pembiayaan ↗</span></div></a>
@@ -251,11 +266,11 @@ footer a:hover{color:var(--gold)}
 <!-- About (copy from the Word document) -->
 <section id="tentang">
   <div class="container about">
-    <div class="about-img">
+    <div class="about-img" data-reveal>
       <img src="assets/IMG-20260917-WA0018.jpg" alt="Fasad rumah kediaman siap dibina Binali">
       <div class="float"><strong>25+</strong><span>rumah siap dibina tanpa projek terbengkalai</span></div>
     </div>
-    <div>
+    <div data-reveal>
       <span class="eyebrow">Tentang Kami</span>
       <h2>Bina Rumah Atas Tanah Sendiri Bersama Binali</h2>
       <p>Binali merupakan kontraktor pembinaan rumah atas tanah sendiri yang fokus beroperasi di <strong>seluruh Terengganu</strong> — bagi memastikan setiap projek dapat dipantau dan diurus dengan lebih dekat.</p>
@@ -273,7 +288,7 @@ footer a:hover{color:var(--gold)}
 <!-- Process -->
 <section class="soft" id="proses">
   <div class="container">
-    <div class="head"><span class="eyebrow">Cara Kami Bekerja</span>
+    <div class="head" data-reveal><span class="eyebrow">Cara Kami Bekerja</span>
       <h2>Dari tapak kosong menjadi sebuah rumah.</h2>
       <p>Setiap binaan bermula dengan keputusan yang jelas — lokasi, reka bentuk, skop kerja dan spesifikasi. Binali menyelaraskan perkara asas ini sebelum kerja bergerak ke peringkat seterusnya.</p>
     </div>
@@ -389,6 +404,10 @@ footer a:hover{color:var(--gold)}
 </div>
 
 <script>
+/* Intersection Observer for scroll-reveal */
+const rv=new IntersectionObserver((e)=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');rv.unobserve(x.target)}}),{threshold:.12,rootMargin:'0px 0px -48px 0px'});
+document.querySelectorAll('[data-reveal]').forEach(e=>rv.observe(e));
+
 /* Galeri: penapis luaran / dalaman / semua */
 document.querySelectorAll('.filter').forEach(f=>f.onclick=()=>{
   document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));
