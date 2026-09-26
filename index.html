@@ -1,34 +1,426 @@
-<!doctype html><html lang="ms"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Binali Construction & Hardware — pembinaan rumah kediaman di Terengganu."><title>Binali — Bina dengan jelas</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet"><style>
-:root{--navy:#1b3029;--blue:#536d5f;--sky:#e7eee8;--bg:#f4f1e9;--muted:#65716a;--line:#d6d6cb;--white:#fffdf8;--r:2px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--navy);font:16px/1.65 'DM Sans',Arial,sans-serif;letter-spacing:-.01em}a{text-decoration:none;color:inherit}img{display:block;max-width:100%}.container{width:min(1160px,calc(100% - 40px));margin:auto}.eyebrow{color:var(--blue);font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border:1px solid transparent;font-weight:700;font-size:13px;letter-spacing:-.01em}.primary{background:#d7e77a;color:var(--navy)}.secondary{background:var(--white);border-color:var(--line)}.primary:hover{background:#e6f391}.secondary:hover{border-color:var(--blue);color:var(--blue)}
-header{position:fixed;z-index:5;inset:0 0 auto;background:rgba(27,48,41,.86);color:var(--white);border-bottom:1px solid rgba(255,255,255,.15);backdrop-filter:blur(14px)}header.scrolled{background:rgba(244,241,233,.96);color:var(--navy);border-color:var(--line);box-shadow:0 5px 20px rgba(27,48,41,.08)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;gap:10px;align-items:center;font-size:18px;font-weight:800;white-space:nowrap}.brand small{display:block;font:500 9px var(--font-mono);letter-spacing:.08em;color:currentColor;opacity:.68;margin-top:1px}.mark{display:grid;place-items:center;width:36px;height:36px;background:var(--navy);color:white;border-radius:0;font-family:Georgia,serif;font-size:20px}.navlinks{display:flex;gap:28px;color:var(--muted);font-size:14px;margin-left:auto}.navlinks a:hover{color:var(--blue)}header:not(.scrolled) .mark{background:transparent;border:1px solid rgba(255,255,255,.7)}header:not(.scrolled) .navlinks{color:rgba(255,255,255,.82)}header .nav>.primary{white-space:nowrap}
-.hero{padding:190px 0 110px;background:linear-gradient(90deg,rgba(27,48,41,.92),rgba(27,48,41,.38)),url('assets/IMG-20260917-WA0013.jpg') center/cover;color:var(--white)}.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.hero h1{font-size:clamp(3rem,6vw,6rem);line-height:1;letter-spacing:-.075em;margin:16px 0 24px}.hero h1 span{color:#d7e77a}.hero p{color:rgba(255,255,255,.78);font-size:18px;max-width:560px}.hero-grid{grid-template-columns:1fr}.hero-img{display:none}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.hero-img{height:570px;width:100%;object-fit:cover;border-radius:26px;box-shadow:0 20px 50px #12233b1c}.proof{display:flex;gap:25px;flex-wrap:wrap;border-top:1px solid var(--line);margin-top:35px;padding-top:20px;color:var(--muted);font-size:13px}.proof strong{display:block;color:var(--navy);font-size:15px}.trust{padding:24px 0;background:#fff;border-block:1px solid var(--line)}.trust-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:var(--muted);font-size:14px}.trust strong{color:var(--navy);margin-right:5px}
-section{padding:108px 0}.section-head{max-width:680px;margin-bottom:42px}.section-head h2{font-size:clamp(2.3rem,4vw,4rem);line-height:1.05;letter-spacing:-.06em;margin:12px 0 15px}.section-head p{color:var(--muted);font-size:17px}.paths{display:grid;grid-template-columns:1fr 1fr;gap:20px}.path{height:400px;position:relative;overflow:hidden;border-radius:var(--r);color:#fff}.path img{width:100%;height:100%;object-fit:cover;transition:.5s}.path:after{content:'';position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#071426e8)}.path:hover img{transform:scale(1.04)}.path-content{position:absolute;z-index:1;bottom:26px;left:28px;right:28px}.path-content h3{font-size:31px;line-height:1.08;letter-spacing:-.05em;margin:8px 0}.path-content span{font-size:14px;font-weight:700}.dark{background:var(--navy);color:#fff}.dark h2,.dark h3{color:#fff}.dark p{color:#bbc9db}.split{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}.steps{border-top:1px solid #3b5270}.step{display:grid;grid-template-columns:70px 1fr;gap:20px;padding:25px 0;border-bottom:1px solid #3b5270}.step-num{color:#8fc0ff;font-weight:700}.step h3{margin:0 0 6px;font-size:21px}.step p{margin:0;font-size:15px}.credentials{display:grid;grid-template-columns:1fr 1fr;gap:16px}.credential{background:#fff;border:1px solid var(--line);border-radius:14px;padding:25px}.credential h3{margin:10px 0 5px}.credential p{color:var(--muted);font-size:14px;margin:0}.credential a{display:inline-block;color:var(--blue);font-size:14px;font-weight:700;margin-top:14px}.projects{display:grid;grid-template-columns:1.15fr .85fr;gap:20px}.project{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}.project img{width:100%;height:330px;object-fit:cover}.project.tall img{height:540px}.project figcaption{padding:17px 20px;font-weight:700}.project figcaption small{display:block;color:var(--muted);font-weight:400}.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.gallery button{border:0;padding:0;border-radius:12px;overflow:hidden;background:none}.gallery img{height:210px;width:100%;object-fit:cover;transition:.4s}.gallery button:hover img{transform:scale(1.05)}.filters{display:flex;gap:8px}.filter{border:1px solid var(--line);border-radius:999px;background:#fff;padding:9px 15px;color:var(--muted)}.filter.active{background:var(--navy);color:#fff}.hidden{display:none!important}
-.contact{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px}.contact h2{font-size:clamp(2.3rem,4vw,4rem);line-height:1.05;letter-spacing:-.06em;margin:12px 0}.contact-copy>p{color:var(--muted);font-size:17px}.form{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px;box-shadow:0 18px 50px #12233b0e}.fields{display:grid;grid-template-columns:1fr 1fr;gap:18px}.field{display:grid;gap:7px;font-size:14px;font-weight:700}.full{grid-column:1/-1}.field input,.field select,.field textarea{width:100%;padding:13px;border:1px solid #cbd8e7;border-radius:9px;outline:none;color:var(--navy);background:#fbfcfe}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px #2f6fed22}.form button{border:0;margin-top:22px}.message{font-size:14px}.error{color:#b33}.ok{color:#187a5c}.social-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.social-card{display:grid;grid-template-columns:180px 1fr;min-height:190px;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:var(--r);transition:transform .2s,box-shadow .2s}.social-card:hover{transform:translateY(-3px);box-shadow:0 16px 34px #12233b12}.social-card img{width:100%;height:100%;min-height:190px;object-fit:cover}.social-copy{padding:24px}.social-copy h3{margin:8px 0;font-size:22px}.social-copy p{margin:0;color:var(--muted);font-size:14px}.social-link{display:inline-block;margin-top:16px;color:var(--blue);font-size:14px;font-weight:700}.footer{background:var(--navy);color:#fff;padding:55px 0 80px}.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px}.footer p{color:#bbc9db;font-size:14px}.mobile{display:none} @media(max-width:600px){.footer-logo{width:130px;height:auto}}
-@media(max-width:850px){.social-card{grid-template-columns:140px 1fr}} @media(max-width:600px){.social-grid{grid-template-columns:1fr}.social-card{grid-template-columns:130px 1fr}.social-copy{padding:18px}.social-copy h3{font-size:19px}}
-@media(max-width:850px){.navlinks{display:none}.hero-grid,.split,.contact{grid-template-columns:1fr;gap:40px}.hero-img{height:450px}.projects{grid-template-columns:1fr}.project.tall img,.project img{height:340px}.gallery{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr}}@media(max-width:600px){.container{width:calc(100% - 32px)}section{padding:78px 0}.nav{height:68px}.nav .primary{padding:10px 13px}.nav .brand small{display:none}.hero{padding-top:120px}.hero h1{font-size:clamp(2.8rem,14vw,4.2rem)}.hero p{font-size:16px}.hero-proof{gap:8px;font-size:9px}.paths,.credentials,.fields{grid-template-columns:1fr}.path{height:330px}.gallery img{height:145px}.form{padding:20px}.footer-grid{grid-template-columns:1fr}.mobile{display:grid;position:fixed;z-index:4;bottom:0;left:0;right:0;grid-template-columns:repeat(3,1fr);background:#fffffff7;border-top:1px solid var(--line)}.mobile a{padding:13px 4px;text-align:center;font-size:12px;font-weight:700;border-right:1px solid var(--line)}.mobile .primary{background:var(--blue);color:#fff}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.path img,.gallery img{transition:none}}
-/* GoHealTrail-inspired finish: quiet editorial rhythm, blue field palette, no card clutter. */
-:root{--font-display:'DM Sans',Arial,sans-serif;--font-serif:Georgia,'Times New Roman',serif;--font-mono:'DM Mono',monospace}
-body{background:#f7f9fc;color:#12233b;letter-spacing:-.012em}h1,h2,h3{font-family:var(--font-serif);font-weight:500;letter-spacing:-.055em}.container{width:min(1180px,calc(100% - 48px))}.eyebrow{font-family:var(--font-mono);font-weight:500;font-size:11px;letter-spacing:.1em}.btn{border-radius:0;box-shadow:none}.primary{background:#2f6fed;color:#fff}.secondary{background:#fff;border-color:#dce5f0}.hero{min-height:740px;padding:170px 0 94px;background:linear-gradient(90deg,rgba(18,35,59,.94),rgba(18,35,59,.42)),url('assets/IMG-20260917-WA0013.jpg') center/cover;color:#fff}.hero-grid{display:block}.hero-img{display:none}.hero h1{max-width:850px;font-size:clamp(58px,9vw,112px);line-height:.91;margin:20px 0 26px}.hero h1 span{color:#8fc0ff}.hero p{max-width:580px;color:rgba(255,255,255,.78)}header{background:rgba(18,35,59,.88);color:#fff;border-bottom-color:rgba(255,255,255,.16)}header.scrolled{background:rgba(247,249,252,.96);color:#12233b;border-color:#dce5f0}.navlinks{color:rgba(255,255,255,.72)}header.scrolled .navlinks{color:#617188}.mark{border-radius:0;background:transparent;border:1px solid currentColor;color:inherit}.trust{background:#fff}.trust-row{font-family:var(--font-mono);font-size:11px}.path,.project,.social-card,.form{border-radius:0}.path{height:440px}.project.tall img{height:600px}.section-head h2,.contact h2{font-family:var(--font-serif);font-weight:500}.dark{background:#12233b}.social-card{box-shadow:none}.footer{background:#0d1a2b}.hero-proof{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:24px;color:rgba(255,255,255,.78);font:500 11px var(--font-mono);letter-spacing:.04em}.hero-proof i{color:#8fc0ff;font-style:normal}.hero-proof span:first-child:before{content:'✓';color:#8fc0ff;margin-right:6px}.hero-proof span:nth-of-type(2):before{content:'✓';color:#8fc0ff;margin-right:6px}.hero-proof span:nth-of-type(3):before{content:'⌖';color:#8fc0ff;margin-right:6px}
-/* Final visibility pass: header and hero controls must never disappear into the image. */
-header#header{position:absolute!important;display:block!important;visibility:visible!important;opacity:1!important;z-index:50!important;inset:0 0 auto!important;background:rgba(18,35,59,.96)!important;color:#fff!important;border-bottom:1px solid rgba(255,255,255,.22)!important}
-header#header .nav{min-height:76px!important;height:76px!important;display:flex!important;visibility:visible!important;opacity:1!important}
-header#header .brand,header#header .brand span,header#header .brand small,header#header .navlinks,header#header .navlinks a{color:#fff!important;visibility:visible!important;opacity:1!important}
-header#header .mark{display:grid!important;visibility:visible!important;opacity:1!important;color:#fff!important;border:1px solid #fff!important;background:transparent!important}
-header#header .nav>.primary{display:inline-flex!important;visibility:visible!important;opacity:1!important;background:#2f6fed!important;color:#fff!important}
-.hero{padding-top:205px!important;min-height:760px!important}
-.hero .eyebrow{color:#b9d5ff!important;visibility:visible!important}
-.hero h1,.hero p,.hero .actions,.hero .hero-proof{position:relative;z-index:2;visibility:visible!important;opacity:1!important}
-.hero .secondary{display:inline-flex!important;visibility:visible!important;opacity:1!important;background:#fff!important;color:#12233b!important;border:1px solid #fff!important}
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Binali — Kontraktor Bina Rumah Atas Tanah Sendiri di Terengganu</title>
+<meta name="description" content="Binali, kontraktor bina rumah atas tanah sendiri di Terengganu. Lebih 25 unit banglo & semi-D siap tanpa projek terbengkalai. Reka & Bina ikut bajet anda.">
+<meta property="og:title" content="Binali — Kontraktor Bina Rumah Atas Tanah Anda | Terengganu">
+<meta property="og:description" content="Dari pelan hingga kunci diserahkan, kami uruskan untuk anda. Lebih 25 unit banglo & semi-D siap di Terengganu.">
+<meta property="og:image" content="https://fahru76.github.io/Binali/assets/IMG-20260917-WA0013.jpg">
+<meta property="og:url" content="https://fahru76.github.io/Binali/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://fahru76.github.io/Binali/assets/IMG-20260917-WA0013.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Binali Construction & Hardware","url":"https://fahru76.github.io/Binali/","image":"https://fahru76.github.io/Binali/assets/Binali-logo.png","telephone":"+60139388309","priceRange":"RM","areaServed":{"@type":"State","name":"Terengganu, Malaysia"},"description":"Kontraktor bina rumah atas tanah sendiri di Terengganu. Lebih 25 unit banglo dan semi-D siap tanpa projek terbengkalai.","identifier":[{"@type":"PropertyValue","propertyID":"SSM","value":"202303296278 (SA0602989-U)"},{"@type":"PropertyValue","propertyID":"CIDB","value":"0120250311-TR152081"}]}
+</script>
+<style>
+:root{
+  --navy:#12233b; --ink:#1c2b3a; --blue:#1f6feb; --blue-dk:#1a5ed6;
+  --gold:#c8a45d; --bg:#ffffff; --soft:#f4f7fb; --muted:#5c6b7c; --line:#e3e9f1;
+  --wa:#25d366; --wa-dk:#1eb857; --r:14px;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 'Plus Jakarta Sans',Arial,sans-serif}
+a{text-decoration:none;color:inherit}img{display:block;max-width:100%}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;letter-spacing:-.02em;margin:0}
+.container{width:min(1140px,calc(100% - 40px));margin:auto}
+.eyebrow{display:inline-block;color:var(--gold);font-weight:800;font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 26px;border-radius:999px;font-weight:700;font-size:15px;border:1px solid transparent;cursor:pointer;transition:.2s}
+.wa{background:var(--wa);color:#06321a}.wa:hover{background:var(--wa-dk)}
+.blue{background:var(--blue);color:#fff}.blue:hover{background:var(--blue-dk)}
+.ghost{background:#fff;border-color:var(--line);color:var(--navy)}.ghost:hover{border-color:var(--blue);color:var(--blue)}
 
-/* Signature moment: a compact project brief gives the hero a memorable, useful layer. */
-.hero{isolation:isolate;overflow:hidden}.hero:before{content:"";position:absolute;inset:116px 7% 42px auto;width:31%;border:1px solid rgba(255,255,255,.2);border-left:0;pointer-events:none}.hero:after{content:"";position:absolute;right:6.8%;top:116px;width:9px;height:9px;background:#8fc0ff;border-radius:50%;box-shadow:0 0 0 7px rgba(143,192,255,.14);pointer-events:none}.hero .container{position:relative}.hero-float{position:absolute;right:8%;bottom:106px;z-index:3;width:min(290px,24vw);padding:20px 21px;background:rgba(10,25,43,.9);border:1px solid rgba(255,255,255,.28);border-top:3px solid #8fc0ff;box-shadow:0 18px 50px rgba(0,0,0,.2);backdrop-filter:blur(10px);color:#fff}.hero-float strong{display:block;font:500 20px/1.12 var(--font-serif);letter-spacing:-.03em}.hero-float span{display:block;margin-top:12px;color:#c8d7e9;font:500 10px var(--font-mono);letter-spacing:.07em;text-transform:uppercase}.hero .actions .primary{box-shadow:0 10px 25px rgba(47,111,237,.28)}.hero .actions .primary:hover{transform:translateY(-2px);box-shadow:0 15px 30px rgba(47,111,237,.36)}
-@media(max-width:850px){.hero:before,.hero:after{display:none}.hero-float{position:relative;right:auto;bottom:auto;width:min(100%,340px);margin:38px 0 0;padding:16px 18px}.hero-float strong{font-size:18px}.hero{min-height:0!important;padding-bottom:72px!important}}
-@media(prefers-reduced-motion:reduce){.hero .actions .primary{transition:none}}
-.brand-logo{display:block;width:48px;height:42px;object-fit:contain;object-position:center}.brand-name{display:block}.footer-brand{display:flex;align-items:center;min-height:54px}.footer-logo{display:block;width:150px;height:auto;object-fit:contain;object-position:left center}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}@media(max-width:600px){.brand-logo{width:42px;height:38px}.brand-name small{display:none}.footer-logo{width:190px;height:56px}}</style></head><body><header id="header"><div class="container nav"><a class="brand" href="#home"><img class="brand-logo" src="assets/Binali-logo.png" alt="Binali Construction &amp; Hardware"><span class="brand-name">Binali<small>CONSTRUCTION &amp; HARDWARE</small></span></a><nav class="navlinks"><a href="#pilihan">Pilihan projek</a><a href="#proses">Cara kerja</a><a href="#projek">Projek</a><a href="#hubungi">Hubungi</a></nav><a class="btn primary" href="#hubungi">Bincang projek ↗</a></div></header><main id="home">
-<section class="hero"><div class="container hero-grid"><div><div class="eyebrow">Kontraktor kediaman · Terengganu</div><h1>Rumah impian.<br><span>Dibina dengan penuh keyakinan.</span></h1><p>Binali membina rumah kediaman setingkat moden untuk keluarga di Terengganu — daripada tapak, kepada struktur, sehingga ruang yang sedia dihuni.</p><div class="actions"><a class="btn primary" href="https://wa.me/60139388309?text=Salam%20Binali%2C%20saya%20ingin%20berbincang%20tentang%20projek%20rumah." target="_blank">Mulakan di WhatsApp ↗</a><a class="btn secondary" href="#projek">Lihat projek</a></div><div class="hero-proof"><span>SSM berdaftar</span><i>·</i><span>CIDB berdaftar</span><i>·</i><span>Paka &amp; Dungun</span></div></div><img class="hero-img" src="assets/IMG-20260917-WA0013.jpg" alt="Rumah kediaman moden dengan kawasan hadapan" fetchpriority="high"></div><div class="hero-float"><strong>Ruang yang dirancang untuk hidup.</strong><span>Fasad · ruang keluarga · dapur</span></div></section><section id="pilihan"><div class="container"><div class="section-head"><div class="eyebrow">Untuk pemilik rumah</div><h2>Inilah yang Binali bina untuk anda.</h2><p>Rumah baharu di atas tanah sendiri, atau ruang sedia ada yang mahu diubah. Pilih keperluan anda dan teruskan ke perbualan yang tepat.</p></div><div class="paths"><a class="path" href="https://wa.me/60139388309" target="_blank"><img src="assets/IMG-20260918-WA0012.jpg" alt="Rumah setingkat dengan anjung"><div class="path-content"><div class="eyebrow">01 · Bina baharu</div><h3>Rumah atas tanah sendiri</h3><span>Bincang keperluan pembinaan ↗</span></div></a><a class="path" href="https://wa.me/60139388309" target="_blank"><img src="assets/IMG-20260919-WA0001.jpg" alt="Ruang dalaman rumah yang siap"><div class="path-content"><div class="eyebrow">02 · Ubah suai</div><h3>Tambah ruang atau kemas kini rumah</h3><span>Bincang skop kerja ↗</span></div></a></div></div></section>
-<section class="dark" id="proses"><div class="container split"><div class="section-head"><div class="eyebrow">Cara kami bekerja</div><h2>Dari tapak<br>menjadi rumah.</h2><p>Setiap binaan bermula dengan keputusan yang jelas — lokasi, reka bentuk, skop kerja dan bahan. Binali menyelaraskan perkara asas ini sebelum kerja bergerak ke peringkat seterusnya.</p></div><div class="steps"><div class="step"><div class="step-num">01</div><div><h3>Fahami projek</h3><p>Kami fahami lokasi, keadaan tanah, gaya rumah dan keperluan keluarga anda.</p></div></div><div class="step"><div class="step-num">02</div><div><h3>Selaraskan skop</h3><p>Kami selaraskan skop kerja, bahan dan perkara yang perlu diputuskan sebelum binaan dimulakan.</p></div></div><div class="step"><div class="step-num">03</div><div><h3>Bina dengan arah yang jelas</h3><p>Kami bergerak ke arah rumah yang lengkap — daripada fasad dan bumbung hingga ke ruang dalaman.</p></div></div></div></div></section>
-<section id="projek"><div class="container"><div class="section-head"><div class="eyebrow">Inspirasi untuk rumah anda</div><h2>Bayangkan rumah anda di sini.</h2><p>Beberapa ruang yang pernah dibina untuk memberi anda idea tentang fasad, anjung, kemasan dan ruang dalaman. Apabila anda bersedia, kita bincangkan apa yang sesuai untuk rumah anda.</p></div><div class="projects"><figure class="project tall"><img src="assets/IMG-20260917-WA0018.jpg" alt="Fasad dan pintu masuk rumah moden"><figcaption>Fasad dan pintu masuk<small>Rumah kediaman</small></figcaption></figure><figure class="project"><img src="assets/IMG-20260917-WA0029.jpg" alt="Rumah putih dengan anjung hadapan"><figcaption>Anjung dan elevasi hadapan<small>Kerja binaan kediaman</small></figcaption></figure></div></div></section>
-<section id="galeri"><div class="container"><div class="section-head"><div class="eyebrow">Galeri projek</div><h2>Lihat hasil binaan Binali.</h2><p>Rujuk fasad, anjung, ruang dalaman dan kemasan yang pernah dibekalkan. Setiap projek tetap bergantung pada skop dan keadaan tapak yang dipersetujui.</p></div><div class="filters"><button class="filter active" data-filter="all">Semua</button><button class="filter" data-filter="exterior">Exterior</button><button class="filter" data-filter="interior">Interior</button></div><div class="gallery"><button data-cat="exterior" data-src="assets/IMG-20260918-WA0009.jpg"><img src="assets/IMG-20260918-WA0009.jpg" alt="Fasad moden dengan garaj"></button><button data-cat="interior" data-src="assets/IMG-20260919-WA0000.jpg"><img src="assets/IMG-20260919-WA0000.jpg" alt="Siling dan kemasan dalaman"></button><button data-cat="interior" data-src="assets/IMG-20260919-WA0003.jpg"><img src="assets/IMG-20260919-WA0003.jpg" alt="Ruang tamu dan ruang makan"></button><button data-cat="exterior" data-src="assets/IMG-20260919-WA0006.jpg"><img src="assets/IMG-20260919-WA0006.jpg" alt="Rumah dengan lampu luaran"></button><button data-cat="interior" data-src="assets/IMG-20260919-WA0001.jpg"><img src="assets/IMG-20260919-WA0001.jpg" alt="Ruang dalaman dengan feature wall"></button><button data-cat="exterior" data-src="assets/IMG-20260917-WA0021.jpg"><img src="assets/IMG-20260917-WA0021.jpg" alt="Anjung dan pintu masuk"></button><button data-cat="exterior" data-src="assets/IMG-20260917-WA0013.jpg"><img src="assets/IMG-20260917-WA0013.jpg" alt="Rumah kediaman dan kawasan hadapan"></button></div></div></section>
-<section id="sosial"><div class="container"><div class="section-head"><div class="eyebrow">Ikuti kerja terkini</div><h2>Lihat perkembangan Binali di media sosial.</h2><p>Video, kemas kini tapak dan projek baharu dikongsi terus di platform rasmi kami. Ikuti kedua-dua saluran untuk melihat kandungan yang lebih kerap, kemudian gunakan WhatsApp apabila anda sudah bersedia untuk menerangkan projek anda. Ikuti kedua-dua saluran untuk melihat kandungan yang lebih kerap, kemudian gunakan WhatsApp apabila anda sudah bersedia untuk menerangkan projek anda.</p></div><div class="social-grid"><a class="social-card" href="https://www.facebook.com/binaliproperties" target="_blank" rel="noopener"><img src="assets/IMG-20260917-WA0018.jpg" alt="Projek rumah Binali di Facebook"><div class="social-copy"><div class="eyebrow">Facebook</div><h3>Binali Properties</h3><p>Kemas kini projek, foto kerja dan maklumat halaman rasmi.</p><span class="social-link">Buka Facebook ↗</span></div></a><a class="social-card" href="https://www.tiktok.com/@binali.construction" target="_blank" rel="noopener"><img src="assets/IMG-20260919-WA0003.jpg" alt="Ruang dalaman projek Binali di TikTok"><div class="social-copy"><div class="eyebrow">TikTok</div><h3>@binali.construction</h3><p>Lihat video progres tapak dan kandungan kerja binaan.</p><span class="social-link">Buka TikTok ↗</span></div></a></div></div></section><section id="hubungi"><div class="container contact"><div class="contact-copy"><div class="eyebrow">Perbualan pertama</div><h2>Kita mula dengan apa yang anda tahu.</h2><p>Isi maklumat ringkas. Mesej akan disediakan untuk WhatsApp supaya perbualan bermula dengan konteks yang betul. Nyatakan apa yang mahu dibina atau diubah, lokasi projek dan perkara yang sudah anda tahu. Binali boleh menyemak maklumat awal sebelum perbualan diteruskan. Nyatakan apa yang mahu dibina atau diubah, lokasi projek dan perkara yang sudah anda tahu. Binali boleh menyemak maklumat awal sebelum perbualan diteruskan.</p></div><form class="form" id="form"><div class="fields"><label class="field">Nama<input name="name" required placeholder="Nama anda"></label><label class="field">Telefon / WhatsApp<input name="phone" required placeholder="01X-XXXXXXX"></label><label class="field">Jenis projek<select name="type"><option>Bina rumah</option><option>Ubah suai / tambah ruang</option><option>Belum pasti</option></select></label><label class="field">Lokasi<input name="location" placeholder="Contoh: Dungun"></label><label class="field full">Nota projek<textarea name="note" rows="4" placeholder="Apa yang anda mahu bina atau ubah?"></textarea></label></div><button class="btn primary" type="submit">Sediakan mesej WhatsApp ↗</button><p id="message" class="message" aria-live="polite"></p></form></div></section></main>
-<footer class="footer"><div class="container footer-grid"><div><div class="footer-brand"><img class="footer-logo" src="assets/Binali-logo.png" alt="Binali Construction &amp; Hardware"><span class="sr-only">Binali</span></div><p>Construction &amp; Hardware<br>Rumah kediaman dan bahan binaan di Terengganu.</p></div><div><div class="eyebrow">WhatsApp</div><p><a href="https://wa.me/60139388309">+60139388309</a></p></div><div><div class="eyebrow">Pendaftaran</div><p>SSM: 202303296278 (SA0602989-U)<br>CIDB: 0120250311-TR152081</p></div><div><div class="eyebrow">Lokasi</div><p>Terengganu<br>Paka · Dungun</p></div></div></footer><div class="mobile"><a href="tel:+60139388309">Call</a><a class="primary" href="https://wa.me/60139388309">WhatsApp</a><a href="#hubungi">Mesej</a></div><script>const hd=document.getElementById('header');addEventListener('scroll',()=>hd.classList.toggle('scrolled',scrollY>10),{passive:true});document.querySelectorAll('.filter').forEach(f=>f.onclick=()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));f.classList.add('active');document.querySelectorAll('.gallery button').forEach(x=>x.classList.toggle('hidden',f.dataset.filter!=='all'&&x.dataset.cat!==f.dataset.filter))});const lb=document.createElement('dialog');lb.id='lightbox';lb.style.cssText='padding:20px;border:0;background:#12233b;border-radius:16px;max-width:90vw';document.body.append(lb);document.querySelectorAll('.gallery button').forEach(b=>b.onclick=()=>{lb.innerHTML='<img style="max-height:80vh;max-width:85vw;border-radius:10px" src="'+b.dataset.src+'" alt="">';lb.showModal()});lb.onclick=e=>{if(e.target===lb)lb.close()};document.getElementById('form').onsubmit=e=>{e.preventDefault();const f=new FormData(e.currentTarget),m=document.getElementById('message');if(!f.get('name')||!f.get('phone')){m.className='message error';m.textContent='Sila isi nama dan nombor telefon.';return}const text='Salam Binali, saya '+f.get('name')+'. Saya ingin '+f.get('type')+' di '+(f.get('location')||'[lokasi belum diisi]')+'. Nota: '+(f.get('note')||'[tiada]');open('https://wa.me/60139388309?text='+encodeURIComponent(text),'_blank');m.className='message ok';m.textContent='Mesej WhatsApp sudah disediakan.'}</script></body></html>
+/* ---------- header: white so the logo stays clear (per brief) ---------- */
+header{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid var(--line)}
+.nav{height:82px;display:flex;align-items:center;gap:34px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:20px;color:var(--navy);letter-spacing:-.01em;min-width:0}
+.logo img{height:52px;width:auto}
+.logo .lt{display:block;line-height:1.15;white-space:nowrap}
+.logo small{display:block;font-size:9.5px;font-weight:700;letter-spacing:.14em;color:var(--muted);text-transform:uppercase}
+.navlinks{display:flex;gap:26px;margin-left:auto;font-size:14.5px;font-weight:600;color:#43546a}
+.navlinks a:hover{color:var(--blue)}
+.nav .btn{padding:12px 20px;font-size:14px}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:var(--navy);color:#fff;overflow:hidden}
+.hero-media{position:absolute;inset:0}
+.hero-media img{width:100%;height:100%;object-fit:cover}
+.hero-media:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,22,38,.92) 8%,rgba(10,22,38,.62) 46%,rgba(10,22,38,.12) 100%)}
+.hero-in{position:relative;z-index:2;padding:118px 0 110px;max-width:640px}
+.hero h1{font-size:clamp(38px,5.4vw,60px);line-height:1.1;color:#fff}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero .sub{margin:20px 0 32px;font-size:19px;line-height:1.6;color:rgba(255,255,255,.9);max-width:520px}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(6px);border-radius:999px;padding:8px 16px;font-size:12.5px;font-weight:700;color:#fff;margin-bottom:22px}
+.hero-stats{position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.18)}
+.hero-stats div{background:rgba(10,22,38,.62);backdrop-filter:blur(8px);padding:22px 10px;text-align:center;color:#fff}
+.hero-stats strong{display:block;font-family:'Playfair Display',serif;font-size:30px;color:var(--gold)}
+.hero-stats span{font-size:12.5px;color:rgba(255,255,255,.8)}
+
+/* ---------- generic section ---------- */
+section{padding:96px 0}
+section.soft{background:var(--soft)}
+.head{max-width:680px;margin-bottom:48px}
+.head h2{font-size:clamp(28px,3.6vw,44px);line-height:1.15;color:var(--navy)}
+.head p{color:var(--muted);font-size:17px;margin:14px 0 0}
+
+/* ---------- services ---------- */
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.tile{position:relative;border-radius:var(--r);overflow:hidden;min-height:300px;color:#fff;display:flex}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:.5s}
+.tile:after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 30%,rgba(9,19,32,.9))}
+.tile:hover img{transform:scale(1.05)}
+.tile-b{position:relative;z-index:2;margin-top:auto;padding:22px}
+.tile-b h3{font-size:19px;color:#fff;margin-bottom:6px}
+.tile-b p{margin:0;font-size:13.5px;color:rgba(255,255,255,.82)}
+.tile-b span{display:inline-block;margin-top:12px;font-size:13px;font-weight:800;color:var(--gold)}
+
+/* ---------- about ---------- */
+.about{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.about-img{position:relative}
+.about-img img{border-radius:var(--r);aspect-ratio:4/5;object-fit:cover;width:100%}
+.about-img .float{position:absolute;left:-24px;bottom:26px;background:#fff;border-radius:var(--r);box-shadow:0 18px 44px rgba(18,35,59,.16);padding:20px 24px;max-width:280px}
+.about-img .float strong{display:block;font-family:'Playfair Display',serif;font-size:34px;color:var(--blue)}
+.about-img .float span{font-size:13px;color:var(--muted)}
+.about h2{font-size:clamp(28px,3.4vw,42px);color:var(--navy);line-height:1.16}
+.about p{color:#44546a;font-size:16.5px}
+.about ul{list-style:none;padding:0;margin:22px 0 30px;display:grid;gap:12px}
+.about li{display:flex;gap:12px;align-items:flex-start;font-weight:600;font-size:15.5px;color:var(--navy)}
+.about li:before{content:'✓';flex:none;display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:#e8f1ff;color:var(--blue);font-size:13px;font-weight:800}
+.tagline{border-left:3px solid var(--gold);padding-left:18px;font-family:'Playfair Display',serif;font-size:19px;color:var(--navy);font-style:italic}
+
+/* ---------- process ---------- */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:s}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px 26px}
+.step:before{counter-increment:s;content:'0' counter(s);font-family:'Playfair Display',serif;font-size:40px;color:var(--gold);display:block;margin-bottom:12px}
+.step h3{font-size:20px;color:var(--navy);margin-bottom:8px}
+.step p{margin:0;color:var(--muted);font-size:15px}
+
+/* ---------- gallery ---------- */
+.filters{display:flex;gap:10px;margin-bottom:26px;flex-wrap:wrap}
+.filter{border:1px solid var(--line);background:#fff;border-radius:999px;padding:10px 20px;font-weight:700;font-size:13.5px;color:#4a5c74;cursor:pointer}
+.filter.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gallery button{border:0;padding:0;border-radius:12px;overflow:hidden;background:none;cursor:pointer;position:relative}
+.gallery img{height:240px;width:100%;object-fit:cover;transition:.45s}
+.gallery button:hover img{transform:scale(1.05)}
+.gallery button small{position:absolute;left:12px;bottom:12px;z-index:2;color:#fff;font-size:12px;font-weight:700;background:rgba(10,22,38,.6);border-radius:8px;padding:4px 10px;opacity:0;transition:.3s}
+.gallery button:hover small,.gallery button:focus-visible small{opacity:1}
+.hidden{display:none!important}
+
+/* ---------- credentials ---------- */
+.creds{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.cred{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px;text-align:center}
+.cred strong{display:block;font-size:15.5px;color:var(--navy);margin-bottom:4px}
+.cred span{font-size:13px;color:var(--muted)}
+
+/* ---------- social ---------- */
+.social-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.social-card{display:grid;grid-template-columns:200px 1fr;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff;transition:.2s}
+.social-card:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(18,35,59,.1)}
+.social-card>img{width:100%;height:100%;min-height:180px;object-fit:cover}
+.social-copy{padding:26px}
+.social-copy h3{font-size:21px;color:var(--navy);margin:6px 0}
+.social-copy p{margin:0;color:var(--muted);font-size:14px}
+.social-link{display:inline-block;margin-top:14px;color:var(--blue);font-weight:800;font-size:14px}
+
+/* ---------- contact ---------- */
+.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start}
+.form{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:32px;box-shadow:0 18px 50px rgba(18,35,59,.07)}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:grid;gap:6px;font-size:13.5px;font-weight:700;color:var(--navy)}
+.full{grid-column:1/-1}
+.field input,.field select,.field textarea{width:100%;padding:13px 14px;border:1px solid #cfd9e6;border-radius:10px;outline:none;color:var(--navy);background:#fbfcfe;font:inherit}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(31,111,235,.14)}
+.form .btn{width:100%;margin-top:20px;border:0}
+.message{font-size:14px;min-height:22px;margin:12px 0 0}
+.error{color:#b3261e}.ok{color:#0f7a4d}
+.contact-copy .row{display:flex;gap:14px;align-items:flex-start;margin-top:22px}
+.contact-copy .row b{display:block;color:var(--navy)}
+.contact-copy .row span{color:var(--muted);font-size:14.5px}
+.ico{flex:none;display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:#e8f1ff;color:var(--blue);font-size:18px}
+
+/* ---------- footer & mobile bar ---------- */
+footer{background:var(--navy);color:#fff;padding:56px 0 96px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+footer .logo{color:#fff}
+footer .logo small{color:rgba(255,255,255,.6)}
+footer p{color:rgba(255,255,255,.72);font-size:14px}
+footer .f-eyebrow{color:var(--gold);font-weight:800;font-size:11px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:12px}
+footer a:hover{color:var(--gold)}
+.mobile{display:none}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+@media(max-width:980px){
+  .tiles{grid-template-columns:1fr 1fr}
+  .about{grid-template-columns:1fr;gap:40px}
+  .about-img .float{left:12px}
+  .creds{grid-template-columns:1fr 1fr}
+  .contact{grid-template-columns:1fr;gap:36px}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:820px){
+  .navlinks{display:none}
+  .steps{grid-template-columns:1fr}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .social-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .nav{height:70px;gap:12px}.nav .btn{display:none}
+  .logo img{height:42px}.logo .lt small{display:none}
+  section{padding:70px 0}
+  .hero-in{padding:72px 0 84px}
+  .hero-stats strong{font-size:22px}
+  .hero-stats span{font-size:11px}
+  .tiles{grid-template-columns:1fr}
+  .tile{min-height:240px}
+  .fields{grid-template-columns:1fr}
+  .form{padding:22px}
+  .gallery img{height:170px}
+  .footer-grid{grid-template-columns:1fr}
+  .social-card{grid-template-columns:130px 1fr}.social-copy{padding:18px}
+  .mobile{display:grid;position:fixed;z-index:70;bottom:0;left:0;right:0;grid-template-columns:1fr 1.6fr 1fr;background:#fffffffa;border-top:1px solid var(--line)}
+  .mobile a{padding:14px 6px;text-align:center;font-size:13px;font-weight:800;color:var(--navy)}
+  .mobile .call{border-right:1px solid var(--line)}.mobile .msg{border-left:1px solid var(--line)}
+  .mobile .primary{background:var(--wa);color:#06321a}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.tile img,.gallery img{transition:none}}
+</style>
+</head>
+<body>
+
+<!-- Header: white background so the logo reads clearly (issue flagged in the brief) -->
+<header>
+  <div class="container nav">
+    <a class="logo" href="#atas" aria-label="Binali Construction and Hardware — halaman utama">
+      <img src="assets/Binali-logo.png" alt="Logo Binali Construction &amp; Hardware">
+      <span class="lt">Binali<small>Construction &amp; Hardware</small></span>
+    </a>
+    <nav class="navlinks" aria-label="Navigasi utama">
+      <a href="#perkhidmatan">Perkhidmatan</a>
+      <a href="#tentang">Tentang Kami</a>
+      <a href="#proses">Cara Kerja</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#hubungi">Hubungi</a>
+    </nav>
+    <a class="btn wa" href="https://wa.me/60139388309?text=Salam%20Binali%2C%20saya%20nak%20bincang%20projek%20bina%20rumah." target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</header>
+
+<main id="atas">
+
+<!-- Hero: white headline per brief; copy straight from the Word document -->
+<section class="hero" id="hero">
+  <div class="hero-media"><img src="assets/IMG-20260917-WA0013.jpg" alt="Rumah banglo siap dibina oleh Binali" fetchpriority="high"></div>
+  <div class="container hero-in">
+    <span class="hero-badge">★ Kontraktor berdaftar SSM &amp; CIDB · Terengganu</span>
+    <h1>Kontraktor <em>Bina Rumah</em><br>Atas Tanah Anda</h1>
+    <p class="sub">Jom bina rumah dengan kami. Dari pelan hingga kunci diserahkan, Binali uruskan untuk anda.</p>
+    <div class="cta">
+      <a class="btn wa" href="https://wa.me/60139388309?text=Salam%20Binali%2C%20saya%20berminat%20untuk%20bina%20rumah%20atas%20tanah%20saya." target="_blank" rel="noopener">Jom Bina — WhatsApp Kami</a>
+      <a class="btn blue" href="#galeri">Lihat Hasil Kerja</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div><strong>25+</strong><span>Unit banglo &amp; semi-D siap</span></div>
+    <div><strong>0</strong><span>Projek terbengkalai</span></div>
+    <div><strong>Terengganu</strong><span>Fokus operasi seluruh negeri</span></div>
+  </div>
+</section>
+
+<!-- Services (perkhidmatan from the Word document) -->
+<section class="soft" id="perkhidmatan">
+  <div class="container">
+    <div class="head"><span class="eyebrow">Perkhidmatan Kami</span>
+      <h2>Satu kontraktor, semua urusan rumah anda.</h2>
+      <p>Bukan sekadar membina — kami bantu dari pelan, kelulusan, sehingga pembiayaan.</p>
+    </div>
+    <div class="tiles">
+      <a class="tile" href="#hubungi"><img src="assets/IMG-20260918-WA0012.jpg" alt="Banglo setingkat atas tanah sendiri"><div class="tile-b"><h3>Bina Rumah Atas Tanah Sendiri</h3><p>Banglo dan semi-D, diurus penuh dari tapak ke serah kunci.</p><span>Tanya harga ↗</span></div></a>
+      <a class="tile" href="#hubungi"><img src="assets/IMG-20260919-WA0001.jpg" alt="Reka bentuk ruang dalaman rumah"><div class="tile-b"><h3>Penyediaan &amp; Lukisan Pelan</h3><p>Pelan rumah disediakan ikut citarasa, keperluan dan bajet anda.</p><span>Bincang pelan ↗</span></div></a>
+      <a class="tile" href="#hubungi"><img src="assets/IMG-20260917-WA0021.jpg" alt="Fasad rumah siap"><div class="tile-b"><h3>Pengurusan Kelulusan PBT</h3><p>Urusan kelulusan Pihak Berkuasa Tempatan diselaraskan bersama anda.</p><span>Semak lokasi ↗</span></div></a>
+      <a class="tile" href="#hubungi"><img src="assets/IMG-20260919-WA0006.jpg" alt="Rumah dengan pencahayaan malam"><div class="tile-b"><h3>Bantuan Pembiayaan</h3><p>Tunai, LPPSA atau institusi kewangan — kami bantu permulaan urusannya.</p><span>Tanya pembiayaan ↗</span></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- About (copy from the Word document) -->
+<section id="tentang">
+  <div class="container about">
+    <div class="about-img">
+      <img src="assets/IMG-20260917-WA0018.jpg" alt="Fasad rumah kediaman siap dibina Binali">
+      <div class="float"><strong>25+</strong><span>rumah siap dibina tanpa projek terbengkalai</span></div>
+    </div>
+    <div>
+      <span class="eyebrow">Tentang Kami</span>
+      <h2>Bina Rumah Atas Tanah Sendiri Bersama Binali</h2>
+      <p>Binali merupakan kontraktor pembinaan rumah atas tanah sendiri yang fokus beroperasi di <strong>seluruh Terengganu</strong> — bagi memastikan setiap projek dapat dipantau dan diurus dengan lebih dekat.</p>
+      <p>Binali telah menyiapkan <strong>lebih 25 unit rumah banglo dan semi-D tanpa projek terbengkalai</strong>. Kami menawarkan konsep <strong>Reka &amp; Bina (R&amp;B)</strong> mengikut citarasa, keperluan dan bajet pelanggan.</p>
+      <ul>
+        <li>Dipantau dekat — fokus operasi di Terengganu sahaja</li>
+        <li>Reka &amp; Bina — rumah ikut citarasa dan bajet anda</li>
+        <li>Rekod bersih — 25+ unit, sifar projek terbengkalai</li>
+      </ul>
+      <p class="tagline">BINALI — Komited membina dengan teliti, disiapkan dengan penuh integriti.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section class="soft" id="proses">
+  <div class="container">
+    <div class="head"><span class="eyebrow">Cara Kami Bekerja</span>
+      <h2>Dari tapak kosong menjadi sebuah rumah.</h2>
+      <p>Setiap binaan bermula dengan keputusan yang jelas — lokasi, reka bentuk, skop kerja dan spesifikasi. Binali menyelaraskan perkara asas ini sebelum kerja bergerak ke peringkat seterusnya.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Rancang &amp; Lukis Pelan</h3><p>Kita bincang keperluan keluarga, gaya rumah dan bajet. Pelan disediakan dan disahkan bersama anda.</p></div>
+      <div class="step"><h3>Kelulusan &amp; Pembiayaan</h3><p>Urusan PBT dan bantuan pembiayaan (tunai, LPPSA, bank) diselaraskan supaya permulaan projek lancar.</p></div>
+      <div class="step"><h3>Bina &amp; Serah Kunci</h3><p>Tapak diurus dan dipantau hingga siap. Rumah diserahkan dalam keadaan sedia dihuni.</p></div>
+    </div>
+    <div style="text-align:center;margin-top:44px"><a class="btn blue" href="#hubungi">Mula Perbualan Projek</a></div>
+  </div>
+</section>
+
+<!-- Gallery: all 11 supplied project photos -->
+<section id="galeri">
+  <div class="container">
+    <div class="head"><span class="eyebrow">Galeri Projek</span>
+      <h2>Lihat sendiri hasil binaan kami.</h2>
+      <p>Rumah-rumah yang telah kami siapkan di Terengganu — luaran dan dalaman.</p>
+    </div>
+    <div class="filters" role="group" aria-label="Penapis galeri">
+      <button class="filter active" data-filter="all">Semua</button>
+      <button class="filter" data-filter="exterior">Luaran</button>
+      <button class="filter" data-filter="interior">Dalaman</button>
+    </div>
+    <div class="gallery">
+      <button data-cat="exterior" data-src="assets/IMG-20260917-WA0013.jpg" data-cap="Banglo setingkat dengan kawasan hadapan"><img src="assets/IMG-20260917-WA0013.jpg" alt="Banglo setingkat dengan kawasan hadapan"><small>Banglo · luaran</small></button>
+      <button data-cat="exterior" data-src="assets/IMG-20260917-WA0018.jpg" data-cap="Fasad dan pintu masuk rumah"><img src="assets/IMG-20260917-WA0018.jpg" alt="Fasad dan pintu masuk rumah"><small>Fasad · luaran</small></button>
+      <button data-cat="exterior" data-src="assets/IMG-20260917-WA0021.jpg" data-cap="Anjung dan pintu masuk"><img src="assets/IMG-20260917-WA0021.jpg" alt="Anjung dan pintu masuk"><small>Anjung · luaran</small></button>
+      <button data-cat="exterior" data-src="assets/IMG-20260917-WA0029.jpg" data-cap="Rumah putih dengan anjung hadapan"><img src="assets/IMG-20260917-WA0029.jpg" alt="Rumah putih dengan anjung hadapan"><small>Elevasi · luaran</small></button>
+      <button data-cat="exterior" data-src="assets/IMG-20260918-WA0009.jpg" data-cap="Fasad moden dengan garaj"><img src="assets/IMG-20260918-WA0009.jpg" alt="Fasad moden dengan garaj"><small>Garaj · luaran</small></button>
+      <button data-cat="exterior" data-src="assets/IMG-20260918-WA0012.jpg" data-cap="Banglo setingkat dengan anjung"><img src="assets/IMG-20260918-WA0012.jpg" alt="Banglo setingkat dengan anjung"><small>Banglo · luaran</small></button>
+      <button data-cat="exterior" data-src="assets/IMG-20260919-WA0006.jpg" data-cap="Rumah dengan lampu luaran"><img src="assets/IMG-20260919-WA0006.jpg" alt="Rumah dengan lampu luaran"><small>Pencahayaan · luaran</small></button>
+      <button data-cat="interior" data-src="assets/IMG-20260919-WA0000.jpg" data-cap="Siling dan kemasan dalaman"><img src="assets/IMG-20260919-WA0000.jpg" alt="Siling dan kemasan dalaman"><small>Siling · dalaman</small></button>
+      <button data-cat="interior" data-src="assets/IMG-20260919-WA0001.jpg" data-cap="Ruang dalaman dengan feature wall"><img src="assets/IMG-20260919-WA0001.jpg" alt="Ruang dalaman dengan feature wall"><small>Feature wall · dalaman</small></button>
+      <button data-cat="interior" data-src="assets/IMG-20260919-WA0003.jpg" data-cap="Ruang tamu dan ruang makan"><img src="assets/IMG-20260919-WA0003.jpg" alt="Ruang tamu dan ruang makan"><small>Ruang tamu · dalaman</small></button>
+      <button data-cat="interior" data-src="assets/IMG-20260919-WA0008.jpg" data-cap="Kemasan ruang dalaman"><img src="assets/IMG-20260919-WA0008.jpg" alt="Kemasan ruang dalaman"><small>Kemasan · dalaman</small></button>
+    </div>
+    <div style="text-align:center;margin-top:38px"><a class="btn wa" href="https://wa.me/60139388309?text=Salam%20Binali%2C%20saya%20tengok%20galeri%20projek%20anda.%20Saya%20nak%20tanya%20tentang%20rumah%20saya." target="_blank" rel="noopener">Nak rumah macam ini juga? WhatsApp kami</a></div>
+  </div>
+</section>
+
+<!-- Credentials -->
+<section class="soft" id="akreditasi">
+  <div class="container">
+    <div class="head" style="margin-bottom:30px"><span class="eyebrow">Semak &amp; Percayai</span>
+      <h2 style="font-size:clamp(24px,3vw,34px)">Berdaftar dan boleh disahkan.</h2>
+    </div>
+    <div class="creds">
+      <div class="cred"><strong>SSM</strong><span>202303296278<br>(SA0602989-U)</span></div>
+      <div class="cred"><strong>CIDB</strong><span>0120250311-TR152081</span></div>
+      <div class="cred"><strong>Reka &amp; Bina</strong><span>Konsep R&amp;B ikut bajet pelanggan</span></div>
+      <div class="cred"><strong>Terengganu</strong><span>Paka · Dungun · Kemaman · seluruh negeri</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Social proof -->
+<section id="sosial">
+  <div class="container">
+    <div class="head"><span class="eyebrow">Ikuti Kerja Terkini</span>
+      <h2>Lihat perkembangan tapak kami di media sosial.</h2>
+      <p>Video dan kemas kini projek dikongsi di halaman rasmi Binali.</p>
+    </div>
+    <div class="social-grid">
+      <a class="social-card" href="https://www.facebook.com/binaliproperties" target="_blank" rel="noopener"><img src="assets/IMG-20260917-WA0029.jpg" alt="Projek Binali di Facebook"><div class="social-copy"><span class="eyebrow">Facebook</span><h3>Binali Properties</h3><p>Kemas kini projek, foto kerja dan maklumat halaman rasmi.</p><span class="social-link">Buka Facebook ↗</span></div></a>
+      <a class="social-card" href="https://www.tiktok.com/@binali.construction" target="_blank" rel="noopener"><img src="assets/IMG-20260919-WA0003.jpg" alt="Video projek Binali di TikTok"><div class="social-copy"><span class="eyebrow">TikTok</span><h3>@binali.construction</h3><p>Ikut progres tapak kami — video kerja binaan sebenar.</p><span class="social-link">Buka TikTok ↗</span></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="soft" id="hubungi">
+  <div class="container contact">
+    <div class="contact-copy">
+      <span class="eyebrow">Hubungi Kami</span>
+      <h2 style="font-size:clamp(28px,3.4vw,42px);color:var(--navy)">Cerita dulu, kami bantu tentukan langkah anda.</h2>
+      <p style="color:var(--muted)">Isi borang atau terus WhatsApp kami. Mesej anda sampai bersama butiran projek yang betul.</p>
+      <div class="row"><div class="ico">☎</div><div><b>WhatsApp / Telefon</b><span><a href="https://wa.me/60139388309" target="_blank" rel="noopener">+60 13-938 8309</a></span></div></div>
+      <div class="row"><div class="ico">◎</div><div><b>Kawasan Perkhidmatan</b><span>Seluruh Terengganu — Paka, Dungun, Kemaman</span></div></div>
+      <div class="row"><div class="ico">▣</div><div><b>Pendaftaran</b><span>SSM 202303296278 (SA0602989-U)<br>CIDB 0120250311-TR152081</span></div></div>
+    </div>
+    <form class="form" id="form">
+      <div class="fields">
+        <label class="field">Nama<input name="name" required placeholder="Nama anda" autocomplete="name"></label>
+        <label class="field">Telefon / WhatsApp<input name="phone" required placeholder="01X-XXXXXXX" autocomplete="tel" inputmode="tel"></label>
+        <label class="field">Jenis projek<select name="type"><option>Bina rumah atas tanah sendiri</option><option>Penyediaan &amp; lukisan pelan</option><option>Pengurusan kelulusan PBT</option><option>Bantuan pembiayaan (LPPSA / bank)</option><option>Belum pasti</option></select></label>
+        <label class="field">Lokasi tanah<input name="location" placeholder="Contoh: Paka"></label>
+        <label class="field full">Cerita ringkas<textarea name="note" rows="4" placeholder="Contoh: ada tanah 40x80 di Paka, nak banglo 3 bilik, bajet sekitar…"></textarea></label>
+      </div>
+      <button class="btn wa" type="submit">Hantar via WhatsApp</button>
+      <p id="message" class="message" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <div class="logo"><img src="assets/Binali-logo.png" alt="" style="height:48px;width:auto;filter:brightness(0) invert(1)"><span class="lt">Binali<small>Construction &amp; Hardware</small></span></div>
+      <p>Kontraktor bina rumah atas tanah sendiri di Terengganu.<br>Komited membina dengan teliti, disiapkan dengan penuh integriti.</p>
+    </div>
+    <div><div class="f-eyebrow">Hubungi</div><p><a href="https://wa.me/60139388309" target="_blank" rel="noopener">+60 13-938 8309 (WhatsApp)</a><br><br><a href="https://www.facebook.com/binaliproperties" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.tiktok.com/@binali.construction" target="_blank" rel="noopener">TikTok</a></p></div>
+    <div><div class="f-eyebrow">Pendaftaran</div><p>SSM: 202303296278 (SA0602989-U)<br>CIDB: 0120250311-TR152081<br><br>Terengganu — Paka · Dungun · Kemaman</p></div>
+  </div>
+</footer>
+
+<div class="mobile" aria-label="Bar tindakan pantas">
+  <a class="call" href="tel:+60139388309">Telefon</a>
+  <a class="primary" href="https://wa.me/60139388309" target="_blank" rel="noopener">WhatsApp Kami</a>
+  <a class="msg" href="#hubungi">Borang</a>
+</div>
+
+<script>
+/* Galeri: penapis luaran / dalaman / semua */
+document.querySelectorAll('.filter').forEach(f=>f.onclick=()=>{
+  document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));
+  f.classList.add('active');
+  document.querySelectorAll('.gallery button').forEach(x=>
+    x.classList.toggle('hidden',f.dataset.filter!=='all'&&x.dataset.cat!==f.dataset.filter));
+});
+/* Lightbox: caption + keyboard navigation */
+const lb=document.createElement('dialog');
+lb.style.cssText='padding:0;border:0;background:#0a1626;max-width:92vw';
+lb.innerHTML='<img style="max-height:82vh;max-width:88vw;display:block" alt=""><p style="color:#cfd9e6;font:14px/1.5 Arial;margin:10px 14px 14px"></p>';
+document.body.append(lb);
+const shots=[...document.querySelectorAll('.gallery button')];
+let idx=0;
+function show(i){idx=(i+shots.length)%shots.length;const b=shots[idx];
+  lb.querySelector('img').src=b.dataset.src;lb.querySelector('img').alt=b.dataset.cap||'';
+  lb.querySelector('p').textContent=b.dataset.cap||'';}
+shots.forEach((b,i)=>b.onclick=()=>{show(i);lb.showModal()});
+lb.onclick=e=>{if(e.target===lb)lb.close()};
+addEventListener('keydown',e=>{if(!lb.open)return;
+  if(e.key==='ArrowRight')show(idx+1);if(e.key==='ArrowLeft')show(idx-1);});
+/* Borang petikan → mesej WhatsApp dengan konteks */
+document.getElementById('form').onsubmit=e=>{
+  e.preventDefault();
+  const f=new FormData(e.currentTarget),m=document.getElementById('message');
+  if(!f.get('name')||!f.get('phone')){m.className='message error';m.textContent='Sila isi nama dan nombor telefon.';return}
+  const t='Salam Binali, saya '+f.get('name')+' ('+f.get('phone')+'). '+
+    'Projek: '+f.get('type')+'. Lokasi: '+(f.get('location')||'belum dinyatakan')+
+    '. Butiran: '+(f.get('note')||'—');
+  open('https://wa.me/60139388309?text='+encodeURIComponent(t),'_blank');
+  m.className='message ok';m.textContent='Mesej WhatsApp anda sudah disediakan — tekan hantar di WhatsApp.';
+};
+</script>
+</body>
+</html>
