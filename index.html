@@ -123,8 +123,17 @@ section.dark .head p{color:rgba(255,255,255,.7)}
 .project-tab.active{color:var(--navy);border-bottom-color:var(--blue)}
 .project-body{display:none;padding:0}
 .project-body.active{display:block}
-.project-stage{position:relative;overflow:hidden}
-.project-stage{display:flex;justify-content:center;background:#0e1c30}.project-stage img{width:100%;height:auto;max-height:560px;object-fit:contain;transition:.4s}
+.project-cover{display:block;background:#0e1c30}
+.project-cover img{width:100%;height:auto;max-height:440px;object-fit:contain;margin:0 auto}
+.project-stage{background:#0e1c30;padding:14px}
+.stage-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.stage-grid button{border:0;padding:0;overflow:hidden;background:none;cursor:pointer;aspect-ratio:4/3;border-radius:8px}
+.stage-grid button img{width:100%;height:100%;object-fit:cover;transition:.35s}
+.stage-grid button:hover img{transform:scale(1.05)}
+.stage-grid.floor button{aspect-ratio:16/10;background:#fff}
+.stage-grid.floor button img{object-fit:contain;padding:6px}
+.stage-count{font-size:11px;font-weight:700;color:var(--gold);margin-left:6px}
+@media(max-width:600px){.stage-grid{grid-template-columns:1fr 1fr;gap:8px}.stage-grid.floor button{aspect-ratio:4/3}}
 
 .project-specs{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:0;padding:0}
 .project-spec{padding:16px 18px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -358,7 +367,7 @@ footer a:hover{color:var(--gold)}
   <div class="container">
     <div class="head" data-reveal><span class="eyebrow">Projek Siap</span>
       <h2>Dari pelan sehingga rumah sebenar.</h2>
-      <p>Setiap rumah yang kami bina adalah unik — ikut citarasa dan bajet pemilik. Lihat proses dari pelan lantai, gambaran 3D, sehingga gambar sebenar rumah siap dibina.</p>
+      <p>Setiap rumah yang kami bina adalah unik — ikut citarasa dan bajet pemilik. Tekan mana-mana gambar untuk lihat lebih dekat: dari pelan lantai dan reka bentuk 3D, sehingga gambar sebenar rumah siap dibina.</p>
     </div>
 
     <!-- Project 1: SDF1 Semi D -->
@@ -369,22 +378,31 @@ footer a:hover{color:var(--gold)}
         <p>Reka bentuk yang simple tetapi tetap nampak elegan — gabungan warna kuning lembut, coklat dan kemasan putih. Setiap ruang direka dengan teliti untuk rumah yang bukan sahaja cantik, tetapi praktikal untuk keluarga. Dari pelan 2D → 3D → rumah siap. Kami bina impian anda menjadi sebuah rumah yang nyata.</p>
       </div>
       <div class="project-stages-nav" role="tablist" data-pid="p1">
-        <button class="stage-btn active" role="tab" aria-selected="true" data-stage="floor">Pelan Lantai</button>
-        <button class="stage-btn" role="tab" aria-selected="false" data-stage="3d">Gambaran 3D</button>
-        <button class="stage-btn" role="tab" aria-selected="false" data-stage="ext">Luaran</button>
-        <button class="stage-btn" role="tab" aria-selected="false" data-stage="int">Dalaman</button>
+        <button class="stage-btn active" role="tab" aria-selected="true" data-stage="floor">Pelan Lantai<span class="stage-count">3</span></button>
+        <button class="stage-btn" role="tab" aria-selected="false" data-stage="ext">3D &amp; Luaran<span class="stage-count">3</span></button>
+        <button class="stage-btn" role="tab" aria-selected="false" data-stage="int">Dalaman<span class="stage-count">3</span></button>
       </div>
+      <div class="project-cover"><img src="assets/docx-00.jpeg" alt="Projek SDF1 Semi D — pandangan projek" loading="lazy" decoding="async"></div>
       <div class="project-stage" data-pid="p1" data-stage="floor" style="display:block">
-        <img src="assets/docx-00.jpeg" alt="Pelan lantai SDF1 Semi D" loading="lazy" decoding="async">
-      </div>
-      <div class="project-stage" data-pid="p1" data-stage="3d" style="display:none">
-        <img src="assets/docx-03.jpeg" alt="Gambaran 3D SDF1 Semi D" loading="lazy" decoding="async">
+        <div class="stage-grid floor">
+          <button data-src="assets/docx-11.jpeg" data-cap="Pelan lantai SDF1 Semi D — helaian 1"><img src="assets/docx-11.jpeg" alt="Pelan lantai SDF1 Semi D — helaian 1" loading="lazy" decoding="async"></button>
+          <button data-src="assets/docx-12.jpeg" data-cap="Pelan lantai SDF1 Semi D — helaian 2"><img src="assets/docx-12.jpeg" alt="Pelan lantai SDF1 Semi D — helaian 2" loading="lazy" decoding="async"></button>
+          <button data-src="assets/docx-13.jpeg" data-cap="Pelan lantai SDF1 Semi D — helaian 3"><img src="assets/docx-13.jpeg" alt="Pelan lantai SDF1 Semi D — helaian 3" loading="lazy" decoding="async"></button>
+        </div>
       </div>
       <div class="project-stage" data-pid="p1" data-stage="ext" style="display:none">
-        <img src="assets/docx-05.jpeg" alt="Luaran rumah SDF1 Semi D siap dibina" loading="lazy" decoding="async">
+        <div class="stage-grid">
+          <button data-src="assets/docx-14.jpeg" data-cap="Pandangan 3D / luaran SDF1 Semi D — 1"><img src="assets/docx-14.jpeg" alt="Pandangan 3D atau luaran SDF1 Semi D — 1" loading="lazy" decoding="async"></button>
+          <button data-src="assets/docx-15.jpeg" data-cap="Pandangan 3D / luaran SDF1 Semi D — 2"><img src="assets/docx-15.jpeg" alt="Pandangan 3D atau luaran SDF1 Semi D — 2" loading="lazy" decoding="async"></button>
+          <button data-src="assets/docx-16.jpeg" data-cap="Pandangan 3D / luaran SDF1 Semi D — 3"><img src="assets/docx-16.jpeg" alt="Pandangan 3D atau luaran SDF1 Semi D — 3" loading="lazy" decoding="async"></button>
+        </div>
       </div>
       <div class="project-stage" data-pid="p1" data-stage="int" style="display:none">
-        <img src="assets/docx-08.jpeg" alt="Dalaman rumah SDF1 Semi D siap dibina" loading="lazy" decoding="async">
+        <div class="stage-grid">
+          <button data-src="assets/docx-17.jpeg" data-cap="Dalaman SDF1 Semi D — 1"><img src="assets/docx-17.jpeg" alt="Dalaman rumah SDF1 Semi D siap dibina — 1" loading="lazy" decoding="async"></button>
+          <button data-src="assets/docx-18.jpeg" data-cap="Dalaman SDF1 Semi D — 2"><img src="assets/docx-18.jpeg" alt="Dalaman rumah SDF1 Semi D siap dibina — 2" loading="lazy" decoding="async"></button>
+          <button data-src="assets/docx-01.jpeg" data-cap="Dalaman SDF1 Semi D — 3"><img src="assets/docx-01.jpeg" alt="Dalaman rumah SDF1 Semi D siap dibina — 3" loading="lazy" decoding="async"></button>
+        </div>
       </div>
       <dl class="project-specs">
         <div class="project-spec"><dt>Lokasi</dt><dd>Kuala Terengganu</dd></div>
@@ -416,22 +434,25 @@ footer a:hover{color:var(--gold)}
         <p>Rekaan moden dengan gabungan hitam, putih &amp; sentuhan kayu, menjadikan rumah nampak lebih eksklusif, kemas dan elegan. Setiap ruang direka dengan teliti supaya bukan sekadar cantik dipandang, tetapi selesa untuk didiami bersama keluarga. Anda impikan rumah seperti ini? Kami bantu realisasikan.</p>
       </div>
       <div class="project-stages-nav" role="tablist" data-pid="p2">
-        <button class="stage-btn active" role="tab" aria-selected="true" data-stage="floor">Pelan Lantai</button>
-        <button class="stage-btn" role="tab" aria-selected="false" data-stage="3d">Gambaran 3D</button>
-        <button class="stage-btn" role="tab" aria-selected="false" data-stage="ext">Luaran</button>
-        <button class="stage-btn" role="tab" aria-selected="false" data-stage="int">Dalaman</button>
+        <button class="stage-btn active" role="tab" aria-selected="true" data-stage="design">Reka &amp; 3D<span class="stage-count">3</span></button>
+        <button class="stage-btn" role="tab" aria-selected="false" data-stage="real">Gambar Sebenar<span class="stage-count">6</span></button>
       </div>
-      <div class="project-stage" data-pid="p2" data-stage="floor" style="display:block">
-        <img src="assets/docx-10.jpeg" alt="Pelan lantai Banglo Puan Syukriah" loading="lazy" decoding="async">
+      <div class="project-stage" data-pid="p2" data-stage="design" style="display:block">
+        <div class="stage-grid">
+          <button data-src="assets/docx-02.jpeg" data-cap="Reka bentuk Banglo Puan Syukriah — 1"><img src="assets/docx-02.jpeg" alt="Reka bentuk atau gambaran 3D Banglo Puan Syukriah — 1" loading="lazy" decoding="async"></button>
+          <button data-src="assets/docx-03.jpeg" data-cap="Reka bentuk Banglo Puan Syukriah — 2"><img src="assets/docx-03.jpeg" alt="Reka bentuk atau gambaran 3D Banglo Puan Syukriah — 2" loading="lazy" decoding="async"></button>
+          <button data-src="assets/docx-04.jpeg" data-cap="Reka bentuk Banglo Puan Syukriah — 3"><img src="assets/docx-04.jpeg" alt="Reka bentuk atau gambaran 3D Banglo Puan Syukriah — 3" loading="lazy" decoding="async"></button>
+        </div>
       </div>
-      <div class="project-stage" data-pid="p2" data-stage="3d" style="display:none">
-        <img src="assets/docx-11.jpeg" alt="Gambaran 3D Banglo Puan Syukriah" loading="lazy" decoding="async">
-      </div>
-      <div class="project-stage" data-pid="p2" data-stage="ext" style="display:none">
-        <img src="assets/docx-14.jpeg" alt="Luaran Banglo Puan Syukriah siap dibina" loading="lazy" decoding="async">
-      </div>
-      <div class="project-stage" data-pid="p2" data-stage="int" style="display:none">
-        <img src="assets/docx-17.jpeg" alt="Dalaman Banglo Puan Syukriah siap dibina" loading="lazy" decoding="async">
+      <div class="project-stage" data-pid="p2" data-stage="real" style="display:none">
+        <div class="stage-grid">
+          <button data-src="assets/docx-05.jpeg" data-cap="Rumah sebenar Banglo Puan Syukriah — 1"><img src="assets/docx-05.jpeg" alt="Rumah sebenar Banglo Puan Syukriah — 1" loading="lazy" decoding="async"></button>
+          <button data-src="assets/docx-06.jpeg" data-cap="Rumah sebenar Banglo Puan Syukriah — 2"><img src="assets/docx-06.jpeg" alt="Rumah sebenar Banglo Puan Syukriah — 2" loading="lazy" decoding="async"></button>
+          <button data-src="assets/docx-07.jpeg" data-cap="Rumah sebenar Banglo Puan Syukriah — 3"><img src="assets/docx-07.jpeg" alt="Rumah sebenar Banglo Puan Syukriah — 3" loading="lazy" decoding="async"></button>
+          <button data-src="assets/docx-08.jpeg" data-cap="Rumah sebenar Banglo Puan Syukriah — 4"><img src="assets/docx-08.jpeg" alt="Rumah sebenar Banglo Puan Syukriah — 4" loading="lazy" decoding="async"></button>
+          <button data-src="assets/docx-09.jpeg" data-cap="Rumah sebenar Banglo Puan Syukriah — 5"><img src="assets/docx-09.jpeg" alt="Rumah sebenar Banglo Puan Syukriah — 5" loading="lazy" decoding="async"></button>
+          <button data-src="assets/docx-10.jpeg" data-cap="Rumah sebenar Banglo Puan Syukriah — 6"><img src="assets/docx-10.jpeg" alt="Rumah sebenar Banglo Puan Syukriah — 6" loading="lazy" decoding="async"></button>
+        </div>
       </div>
       <dl class="project-specs">
         <div class="project-spec"><dt>Lokasi</dt><dd>Kerteh</dd></div>
@@ -644,7 +665,7 @@ const lb=document.createElement('dialog');
 lb.style.cssText='padding:0;border:0;background:#0a1626;max-width:92vw';
 lb.innerHTML='<img style="max-height:82vh;max-width:88vw;display:block" alt=""><p style="color:#cfd9e6;font:14px/1.5 Arial;margin:10px 14px 14px"></p>';
 document.body.append(lb);
-const shots=[...document.querySelectorAll('.gallery button')];
+const shots=[...document.querySelectorAll('.gallery button,.stage-grid button')];
 let idx=0;
 function show(i){idx=(i+shots.length)%shots.length;const b=shots[idx];
   lb.querySelector('img').src=b.dataset.src;lb.querySelector('img').alt=b.dataset.cap||'';
