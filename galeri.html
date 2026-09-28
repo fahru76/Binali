@@ -95,27 +95,59 @@
   </div>
 </div>
 </main>
-<footer>
-  <div class="container footer-grid">
-    <div>
-      <div class="logo"><img src="assets/Binali-logo.png" alt="" loading="lazy" decoding="async" style="height:48px;width:auto;filter:brightness(0) invert(1)"><span class="lt">Binali<small>Construction &amp; Hardware</small></span></div>
-      <p>Kontraktor bina rumah atas tanah sendiri di Terengganu.<br>Komited membina dengan teliti, disiapkan dengan penuh integriti.</p>
-    </div>
-    <div><div class="f-eyebrow">Hubungi</div><p><a href="https://wa.me/60139388309" target="_blank" rel="noopener">+60 13-938 8309 (WhatsApp)</a><br><br><a href="https://www.facebook.com/binaliproperties" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.tiktok.com/@binali.construction" target="_blank" rel="noopener">TikTok</a></p></div>
-    <div><div class="f-eyebrow">Pendaftaran</div><p>SSM: 202303296278 (SA0602989-U)<br>CIDB: 0120250311-TR152081<br><br>Terengganu — Paka · Dungun · Kemaman</p></div>
-  </div>
-</footer>
-<div class="mobile" aria-label="Bar tindakan pantas">
-  <a class="call" href="tel:+60139388309">Telefon</a>
-  <a class="primary" href="https://wa.me/60139388309" target="_blank" rel="noopener">WhatsApp Kami</a>
-  <a class="msg" href="hubungi.html">Borang</a>
-</div>
+<div id="binali-footer"></div>
+<script>
+(function(){
+  document.getElementById('binali-footer').outerHTML=[
+  '<footer>',
+    '<div class="container footer-grid">',
+      '<div>',
+        '<div class="logo"><img src="assets/Binali-logo.png" alt="" loading="lazy" decoding="async" style="height:48px;width:auto;filter:brightness(0) invert(1)"><span class="lt">Binali<small>Construction &amp; Hardware</small></span></div>',
+        '<p>Kontraktor bina rumah atas tanah sendiri di Terengganu.<br>Komited membina dengan teliti, disiapkan dengan penuh integriti.</p>',
+      '</div>',
+      '<div><div class="f-eyebrow">Hubungi</div><p><a href="https://wa.me/60139388309" target="_blank" rel="noopener">+60 13-938 8309 (WhatsApp)</a><br><br><a href="https://www.facebook.com/binaliproperties" target="_blank" rel="noopener">Facebook</a> \u00b7 <a href="https://www.tiktok.com/@binali.construction" target="_blank" rel="noopener">TikTok</a></p></div>',
+      '<div><div class="f-eyebrow">Pendaftaran</div><p>SSM: 202303296278 (SA0602989-U)<br>CIDB: 0120250311-TR152081<br><br>Terengganu \u2014 Paka \u00b7 Dungun \u00b7 Kemaman</p></div>',
+    '</div>',
+  '</footer>',
+  '<div class="mobile" aria-label="Bar tindakan pantas">',
+    '<a class="call" href="tel:+60139388309">Telefon</a>',
+    '<a class="primary" href="https://wa.me/60139388309" target="_blank" rel="noopener">WhatsApp Kami</a>',
+    '<a class="msg" href="hubungi.html">Borang</a>',
+  '</div>'].join('');
+})();
+</script>
+
+
 <script>
 const hd=document.querySelector('header');
 addEventListener('scroll',()=>hd.classList.toggle('scrolled',scrollY>10),{passive:true});
 const rv=new IntersectionObserver((e)=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');rv.unobserve(x.target)}}),{threshold:.12,rootMargin:'0px 0px -48px 0px'});
 document.querySelectorAll('[data-reveal]').forEach(e=>rv.observe(e));
 
+
+
+/* Gallery filter */
+document.querySelectorAll('.filter').forEach(f=>f.onclick=()=>{
+  document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));
+  f.classList.add('active');
+  document.querySelectorAll('.gallery button').forEach(x=>
+    x.classList.toggle('hidden',f.dataset.filter!=='all'&&x.dataset.cat!==f.dataset.filter));
+});
+
+/* Lightbox + stage lightbox */
+const lb=document.createElement('dialog');
+lb.style.cssText='padding:0;border:0;background:#0a1626;max-width:92vw';
+lb.innerHTML='<img style="max-height:82vh;max-width:88vw;display:block" alt=""><p style="color:#cfd9e6;font:14px/1.5 Arial;margin:10px 14px 14px"></p>';
+document.body.append(lb);
+const shots=[...document.querySelectorAll('[data-src]')];
+let idx=0;
+function show(i){idx=(i+shots.length)%shots.length;const b=shots[idx];
+  lb.querySelector('img').src=b.dataset.src;lb.querySelector('img').alt=b.dataset.cap||'';
+  lb.querySelector('p').textContent=b.dataset.cap||'';}
+shots.forEach((b,i)=>b.onclick=()=>{show(i);lb.showModal()});
+lb.onclick=e=>{if(e.target===lb)lb.close()};
+addEventListener('keydown',e=>{if(!lb.open)return;
+  if(e.key==='ArrowRight')show(idx+1);if(e.key==='ArrowLeft')show(idx-1);});
 </script>
 </body>
 </html>
