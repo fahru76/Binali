@@ -61,9 +61,9 @@ section.dark .teaser p{color:rgba(255,255,255,.72)}
 .cta-band .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:26px}
 [data-reveal]{opacity:0;transform:translateY(32px);transition:opacity .7s ease,transform .7s cubic-bezier(.22,1,.36,1)}
 [data-reveal].visible{opacity:1;transform:translateY(0)}
-@media(max-width:980px){.hub-hero{min-height:auto}.hub-stats{position:relative;padding:40px 0 20px;background:none}}
+@media(max-width:980px){.hub-hero{min-height:auto;flex-direction:column}.hub-hero .hero-in{width:100%;max-width:none}.hub-stats{position:relative;width:100%;padding:40px 0 20px;background:none}}
 @media(max-width:820px){.teaser{grid-template-columns:1fr;gap:26px}.teaser.flip .teaser-img{order:0}}
-@media(max-width:600px){section{padding:70px 0}.hub-hero .hero-in{padding:72px 0 40px}.hub-stats-in{gap:20px}.hub-stat strong{font-size:28px}}
+@media(max-width:600px){section{padding:70px 0}.hub-hero .hero-in{padding:72px 20px 40px}.hub-stats-in{gap:20px}.hub-stat strong{font-size:28px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hub-hero .hero-media img,.hub-hero h1,.hub-hero .sub,.hub-hero .cta,.hub-hero .hero-badge{animation:none;opacity:1;transform:none}.teaser-img img{transition:none}[data-reveal]{opacity:1;transform:none;transition:none}.marquee-track{animation:none}}
 </style>
 </head>

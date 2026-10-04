@@ -215,6 +215,8 @@ footer a:hover{color:var(--gold)}
 @media(max-width:600px){
   .nav{height:70px;gap:12px}.nav .btn{display:none}
   .logo img{height:42px}.logo .lt small{display:none}
+  body{padding-bottom:54px}
+  .hero-in{padding-left:20px;padding-right:20px}
   section{padding:70px 0}
   .hero-in{padding:72px 0 40px}
   .steps{grid-template-columns:1fr}
